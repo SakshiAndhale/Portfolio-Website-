@@ -14,22 +14,3 @@ function moveCarousel(direction) {
 setInterval(() => {
     moveCarousel(1);
 }, 3000);
-
-
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    // Simulating form submission
-    setTimeout(() => {
-        // Show fireworks and thank you message
-        document.getElementById('fireworks-container').style.display = 'flex';
-
-        // Hide fireworks after 3 seconds
-        setTimeout(() => {
-            document.getElementById('fireworks-container').style.display = 'none';
-        }, 3000);
-    }, 500);
-
-    // In a real-world scenario, you would send the form data to your server here
-    // For example, using fetch or XMLHttpRequest
-});
